@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando fontes externas</title>
+</head>
+<style>
+    @font-face {
+        font-family: 'fonthair';
+        src: url('fonts/Shelter_PersonalUseOnly.ttf') format('truetype');
+        font-weight: normal;
+         font-style: normal;
+
+        /* tipos de format()
+        1 - opentype (otf)
+        2 - truetype ( ttf)
+        3 - embedded-opentype
+        4 - truetype-aat (Apple advanced typography)
+        5 - svg
+        */
+    }
+    body{
+        background: white;
+        color:black;
+        font-family: fonthair, Helvetica, sans-serif;
+        font-weight: normal;
+        font-size: xx-large;
+        font-style: normal;
+      
+        
+    }
+    h1{
+        font-family: fonthair, Helvetica, sans-serif;
+        font: 20pt;
+        font-weight: normal;
+        background-color: rgb(161, 161, 204);
+        
+    }
+    h2{
+        font-family: fonthair, Helvetica, sans-serif;
+        font-weight: normal;
+        font: 20px;
+        background-color: rgb(161, 161, 204);
+    }
+    h3{
+        font-weight: normal;
+    }
+</style>
+<body>
+    
+    <h1>Fontes externas</h1>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis odio doloribus aliquid, eum ipsum eveniet? Assumenda quod facere corporis id est maiores neque voluptatum! Temporibus impedit corporis molestias optio ipsa!</p>
+
+    <h2>fontes diversas</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, excepturi! Vero, minima animi facere nobis omnis quibusdam dolor expedita voluptatibus odio accusantium reprehenderit, exercitationem qui, quod a sed suscipit similique?</p>
+
+    <p>Esse fontes podem ser obtidas no site Dafont
+   <a href="https://www.dafont.com/pt/">dafont</a> </p> 
+
+   <h3>Detectar Fontes dentro de Imagens</h3>
+   <p>Através do site <a href="https://www.whatfontis.com/">whatfontis.com</a>, consegui descobrir a fonte de uma imagem</p>
+
+   <p> <a href="https://www.fontsquirrel.com/matcherator">no site www.fontsquirrel.com</a></p>
+
+   <p>  <a href="https://www.myfonts.com/">www.myfont.com</a></p>
+</body>
+</html>

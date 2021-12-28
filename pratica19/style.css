@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* quando uso 'id' no HTMl no CSS tenho que usar '#' 
+quando uso 'class' no HTML nos CSS  tenho que usar '.' */
+
+body{
+    background: rgb(178, 178, 197);
+    color: rgb(97, 97, 194);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+
+h1#principal{
+    text-align: center;
+    background-color: mediumblue;
+    color: white;
+}
+
+.secundario{
+text-align: center;
+font-family: cursive;
+color: rgb(5, 82, 78);
+
+}
+
+.basico{
+    text-align: right;
+    color: black;
+    font-style: bold;
+    font: 15px;
+}
+
+.intermediario{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(231, 173, 13);
+
+}
+
+.avancado{
+    color: rgba(231, 13, 13, 0.493);
+}
