@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        /*
+         '.' é class; '#' é id; ':' é pseudo-class; '::' é pseudo-element;
+         '>' = children
+        */
+        body{
+            text-align: initial;
+            background: chocolate;
+            color: black;
+            text-align: center;
+            font-size: larger;
+             }
+
+             a:visited {
+                 color: darkred;
+             }
+
+             a:hover {
+                 color: black;
+                 text-decoration: underline;
+             }
+
+             a:active {
+                 color:yellow;
+
+             }
+             .dia {
+        font-size: larger;
+        background-color: yellow;
+
+             }
+
+             a::before {
+                 content: 'ℵ ';
+                 font-size: large;
+             }
+             a::after {
+                 content: ' ⇒' ;
+             }
+
+            
+    </style>
+</head>
+<body>
+    <ul>
+    <h1>Personalizando links</h1>
+
+    <li><a href="https://github.com/luk-oliver" class= "dia" target="_blank">Repositório do Github</a></li>
+
+    <li> <a href="https://www.youtube.com/channel/UCFGBnIjBAZmv3YIiFI99Qfg" target="_blank">Canal do Youtube</a></li>
+
+    <li><a href="https://www.w3schools.com/js/js_whereto.asp">w3school</a></li>
+    </ul>
+</body>
+</html>

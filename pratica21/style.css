@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+body{
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header{
+    background-color: #131921;
+   height: 100px;
+   margin-top: 2px;
+   border: 2px solid black;
+ 
+}
+header > h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    margin: 2px 8px;
+}
+h1:hover{
+    color: rgb(231, 162, 71);
+}
+h1:active{
+    color: lime;
+}
+nav {
+     margin-top: 35px;
+         
+}
+ nav > a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    margin:15px 20px;
+    text-decoration: none;
+ }
+
+ a:hover{
+     color: crimson;
+ }
+ 
+
+ main{
+     background: rgb(109, 109, 160);
+     border: 2px solid lightskyblue;
+     padding: 4px;
+     border-radius: 8px 0px;
+     
+ }
+
+ section{
+    background: rgb(136, 180, 136);
+    border-radius: 8px 0px; 
+    border: 2px solid lightslategrey;
+    padding: 5px;
+    box-shadow: 8px 8px 8px black;
+    margin-bottom: 10px;
+ }
+  section > h2{
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      color:white;
+      margin: 8px ;
+      text-shadow: 10px 10px 10px black;
+      
+    
+  }
+  h2 > p {
+  text-align: justify;
+  text-indent: 8px;
+  
+
+
+  }
+  .lorem{
+    background: rgb(136, 180, 136);
+    height: 300px;
+    width: 300px;
+    border: 2px solid lightslategrey;
+    padding: 20px;
+    box-shadow: 4px black;
+    margin-top: 10px;
+ }
+
+ .lorem h3{
+     text-align: center;
+     text-indent: 20px;
+     color: white;
+     text-shadow: 10px 10px 10px black;
+
+
+ }
+ .parte {
+  background:  rgb(183, 211, 183);
+  height: 300px;
+  width:  600px;
+  border: 2px solid lightskyblue;
+  padding: 10px;
+  margin-right: 100px;
+  border-radius: 10px;
+  box-shadow: 8px 4px 4px rgba(0, 0, 0, 0.589);
+  margin-top: 5px;
+ }
+
+ .parte > h3{
+     font-family: Arial, Helvetica, sans-serif;
+     text-align: center;
+     color:whitesmoke;
+     text-shadow: 10px 10px 10px black;
+ }
+
+ .parte p {
+     font-family: Arial, Helvetica, sans-serif;
+     text-align: justify;
+     text-indent: 20px;
+ }
+
+ footer{
+     background-color: lightslategrey;
+     text-align: center;
+     padding: 5px;
+     margin-top: 5px;
+     border: 2px solid lightgrey;
+     border-radius: 10px 0px;
+     box-shadow: 10px 10px 10px black;
+ }
+ footer > p{
+     color: black;
+     text-shadow: 10px 10px 10px black;
+ }
+
+
+
+ 

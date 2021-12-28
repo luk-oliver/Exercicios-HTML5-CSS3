@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixa</title>
+    <style>
+
+/*posso troca do block para inline usando o display inline */  
+        h1{  /* exemplo de box-level  forma padrão*/
+            background-color: lightblue;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid; 
+            border-color: black;
+
+ /* forma simplificada da border acima */
+     /*border: 10px solid darklategray; */
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /* forma simplificada*/
+            /* padding: 10px 10px 10px 10px; esse subs os padding acima*/
+            /* ou mais simples padding: 10px; */
+
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+             
+            /* forma simplificada*/
+            /* margin: 20px 20px 40px 20px; esse subs as margin acima*/
+            /* ou mais simples padding: 10px; */
+
+ /* margin: 20px auto 20px auto; centraliza a direita e a esquerda */           
+               /*margin-auto; cenrtaliza a caixa*/
+
+           outline-width: 5px; /*largura do tracejado*/
+            outline-style: dashed; /* linha tracejada*/
+            outline-color: chocolate;
+
+            /* forma simplificada do outline */
+            /* outline: 5px dashed salmon;*/
+        }
+
+/* posso trocar o inline para o block usando o display block */
+/* posso fazer um display inline block*/
+
+        a{ /*exemplos de box-inline */
+ 
+            background-color: blueviolet;
+            color: black;
+            height: 10px;
+            width: 10px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: brown;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /* forma simplificada*/
+            /* padding: 10px 10px 10px 10px; esse subs os padding acima*/
+            /* ou mais simples padding: 10px; */
+
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+
+            /* forma simplificada*/
+            /* margin: 20px 20px 40px 20px; esse subs as margin acima*/
+            /* ou mais simples padding: 10px; */
+
+            outline-width: 5px; /*largura do tracejado*/
+            outline-style: dashed; /* linha tracejada*/
+            outline-color: chocolate;
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos de caixa Box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">Links são exemplos de caixas inline-level</a></p>
+    
+</body>
+</html>
