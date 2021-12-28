@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mídias em html</title>
+</head>
+<body>
+    <h1>Imagem Dinâmicas</h1>
+    <p>Tente abrir esses site em vários dispositivos diferentes ou o simplismente aumente ou diminue o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível"> 
+        <!-- apos colocar a imagem vai colocando os source media srcset type, 
+        sempre colocando na ordem grande, media e pequena ou vice-versa -->
+    </picture>
+
+    <h2>reproduzindo audio</h2>
+
+    <p>Vamos reproduzir audio em HTML</p>
+
+    <audio src="mídia/happy mistake.mp3" controls autoplay></audio> 
+    <!-- este é uma forma de carregar audio a outra é:-->
+    <br>
+    <audio preload="metadata" autoplay controls> 
+<!-- escolha pelo preload metadata ou none, caso autoplay não funcione coloque o controls, 
+    e o loop é para reproduzir novamente o audio automaticamente -->
+
+        <source src="mídia/guanacast-33.mp3" type="audio/mpeg">
+
+        <source src="mídia/guanacast-33.ogg" type="audio/ogg">
+        <!-- coloque em ordem os source mpeg - ogg - wva-->
+        <source src="mídia/guanacast-33.wva" type="audio/wva"> 
+        <!-- evitar de usar o wva porque é muito pesado para um site--> 
+
+    <p>infelizmente seu navegador não consegue reproduzir o audio 
+    <a href="mídia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>
