@@ -1,0 +1,208 @@
+@charset "UTF-8";
+/* o import está importanto fonte do google font*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* abaixo importando font da pasta local*/
+ 
+@font-face{
+    font-family: 'Android';
+    src: url('./fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+/* trabalhando com variável  de cores  e fontes no CSS no exemplo abaixo */
+  :root{
+      --cor1:#c5ebd6;
+      --cor2:#83e1ad;
+      --cor3:#3ddc84;
+      --cor4:#2fa866;
+      --cor5:#1a5c37;
+      --cor6:#063d1e;
+
+      --fonte-padrão: Arial, Verdana, Helvetica, sans-serif;
+      --fonte-destaque: 'Bebas Neue', cursive;
+      --font-android: 'Android', cursive;
+  }
+   * {
+          margin: 0px;
+          padding: 0px;
+    }
+body{
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrão);
+    
+}
+
+header {
+    background-image: linear-gradient(to right, var(--cor2), var(--cor5));
+    height: 11rem;
+    margin: 5px solid rgb(143, 218, 143);
+
+}
+header h1{
+    color: white;
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    font-weight: normal;
+    padding: 12px 0px 6px 0px;
+}
+header p{
+    color:white;
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    font-size: 20px;
+    font-weight: normal;
+   
+}
+
+ nav {
+   position: absolute;
+   top: 153px;
+ 
+}
+nav a {
+color:var(--cor6);
+margin-left: 40px;
+text-decoration: none;
+font-size: 18px;
+font-weight: bold;
+font-family: var(--fonte-padrão);
+display: inline;
+}
+
+nav > a:hover{
+    background-color: var(--cor5);
+    color: var(--cor3);
+    border: 7px solid;
+    border-radius: 0px 5px 0px 0px;
+    transition-duration: .5s;
+}
+
+main{
+background-color: white;
+min-width:300px;
+max-width: 1000px;
+margin: auto;
+padding-bottom: 20px;
+box-shadow: 2px 2px 10px black;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+
+}
+
+main h1{
+    padding-top: 15px;
+    font-family:var(--font-android);
+    text-align: center;
+    background-image: linear-gradient(to right, var(--cor5), var(--cor2), transparent);
+
+}
+
+
+main p {
+margin: 15px 0px;
+text-align: justify;
+text-indent: 30px;
+line-height: 2em;
+
+}
+
+main a {
+text-decoration: none;
+color: var(--cor4);
+background-color: var(--cor2);
+padding: 2px 4px;
+
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor6);
+
+}
+
+h2{
+    padding-top: 15px;
+    font-family: var(--font-android);
+    background-image: linear-gradient(to right, var(--cor5), var(--cor2), transparent);
+    text-indent: 15px;
+    text-align: center;
+
+}
+
+main img{
+    width: 95%;
+    margin: 25px;
+}
+ 
+main img.pequena { 
+max-width: 350px;
+display: block;
+margin: auto;
+}
+
+div.video {
+    background-color: var(--cor3);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px 10px 0px -2px;
+    padding-bottom: 30%;
+    position: relative;
+}
+
+div.video > iframe{
+    position:absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside{
+    background-color: var(--cor3);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+}
+
+aside > h3 {
+background-color:var(--cor6);
+color: var(--cor3);
+text-align: center;
+padding: 10px;
+border: -10px -10px 0px -10px;
+
+}
+
+aside > h3:hover{
+    text-decoration: underline;
+    color: white;
+    
+}
+
+aside ul{
+    list-style-type:'\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+    line-height: 1.5em;
+
+}
+
+footer{
+    background-image: linear-gradient(to top, var(--cor3), var(--cor5));
+    color: var(--cor6);
+    height: 30px;
+    width: 74%;
+    margin:auto;
+    text-align: center;
+    padding-top: 15px;
+   
+    
+}
+
+footer:hover{
+    color: black;
+     text-decoration: underline;
+}
+
+
